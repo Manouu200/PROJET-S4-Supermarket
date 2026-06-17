@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\RedirectResponse;
+
 class Home extends BaseController
 {
     public function index(): string
@@ -9,11 +11,18 @@ class Home extends BaseController
         return view('welcome_message');
     }
 
-    public function dashboard(): string
+    public function dashboard(): string|RedirectResponse
     {
         helper('url');
 
         return view('dashboard');
+        if (!session()->has('client')) {
+            return redirect()->to('login');
+        }
+
+        return view('dashboard', [
+            'client' => session()->get('client'),
+        ]);
     }
 
     public function caisse(): string
