@@ -11,6 +11,18 @@ class Home extends BaseController
 
     public function dashboard(): string
     {
+        helper('url');
+
         return view('dashboard');
+    }
+
+    public function caisse(): string
+    {
+        return view('page/caisse');
+    }
+
+    public function produits(): string
+    {
+        return view('page/produits');
     }
 }
