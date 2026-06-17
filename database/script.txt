@@ -1,0 +1,29 @@
+client:
+id,
+nom,
+telephone,
+email,
+mot de passe
+
+caisse:
+id,
+numero_caisse,
+nom_caisse
+
+produit:
+id,
+designation,
+prix_unitaire
+
+stock:
+id,
+id_produit, 
+quantite_stock,
+date(avec heure minute seconde)
+
+achat:
+id,
+id_client,
+id_caisse,
+id_produit,
+quantite
