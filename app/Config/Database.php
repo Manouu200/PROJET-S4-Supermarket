@@ -25,7 +25,7 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'database'    => ROOTPATH . 'database/supermarket.db',
+        'database'    => ROOTPATH . 'database' . DIRECTORY_SEPARATOR . 'supermarket.db',
         'DBDriver'    => 'SQLite3',
         'DBPrefix'    => '',
         'DBDebug'     => true,
