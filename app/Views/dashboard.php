@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                     <hr>
-                    <a href="#" class="nav-link text-white">
+                    <a href="<?= site_url('logout') ?>" class="nav-link text-white">
                         Déconnexion
                     </a>
                 </div>
@@ -72,7 +72,7 @@
                         </li>
                     </ul>
                     <hr>
-                    <a href="#" class="nav-link text-white">
+                    <a href="<?= site_url('logout') ?>" class="nav-link text-white">
                         Déconnexion
                     </a>
                 </div>
